@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+}
+
+/*/ --------- HEADLINE----------/*/
+
+.headline h1 {
+    text-align: center;
+    color: #222;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    color: #343333;
+    padding-top: 10px;
+}
+
+.headline h1 span {
+    line-height: 2em;
+    padding-bottom: 15px;
+    text-transform: none;
+    font-size: .7em;
+    font-weight: normal;
+    font-style: italic;
+    font-family: "Playfair Display", "Bookman", serif;
+    color: #707070;
+    letter-spacing: -0.005em;
+    word-spacing: 1px;
+    letter-spacing: none;
+}
+
+
+
+/*/-------HEADLINE BANNER---------/*/
+
+.banner {
+    height: 20px;
+    margin-bottom: 40px;
+    background-image: linear-gradient(to left, #37a1ce, #80f2f8);
+    color: transparent;
+    background-clip: text;
+    border: 2.5px solid grey;
+}
+
+
+
+/*/---------- IMAGE CONTAINER---------/*/
+
+.imgcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/*/-------------- IMAGE BOXES--------------/*/
+
+.imgbox {
+    margin: 5px;
+    padding: 5px;
+}
+
+
+
+.imgbox .arrow-left, .arrow-right {
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.imgbox .arrow-left, .arrow-left {
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+
+.imgbox .arrow-left,.arrow-right:hover {
+    opacity: .5;
+}
+
+.imgbox .arrow-left, .arrow-left:hover {
+    opacity: .5;
+}
+
+
+
+
+
+
+.imgbox img {
+    object-fit: contain;
+    height: 200px;
+    opacity: 0.7;
+    transition: 1s ease;
+}
+
+.imgbox img:hover {
+    opacity: 1;
+    transition: 1s ease;
+    cursor: pointer;
+
+}
+
+
+.openImage {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.openImage .boximage {
+
+    object-fit: contain;
+    height: auto;
+    width: 60%;
+
+}
+
+/*/---------------- DISPLAY NONE --------------- /*/
+.d-none {
+    display: none;
+}
+
+
+/*/---------------- BUTTON ---------------/*/
+
+.button {
+    margin: 10px;
+    padding: 15px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-image: linear-gradient(45deg, #2f97ff 0%, #19c9f0 51%, #2ffff5 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.button:active {
+    transform: scale(0.95);
+}
+
+/*/---------- ARROW BUTTONS --------------/*/
+
+
+
+.arrow-left {
+    margin: 15px;
+    left: 370px;
+    height: auto;
+    width: 50px;
+    object-fit: contain;
+}
+
+.arrow-right {
+    margin: 15px;
+    right: 370px;
+    height: auto;
+    width: 50px;
+    object-fit: contain;
+}
+
+
+.arrow-left:hover {
+    cursor: pointer;
+}
+
+.arrow-right:hover {
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 600px){
+
+.arrow-left{
+    width: 35px;
+    height: auto;
+}
+
+.arrow-right{
+    width: 35px;
+    height: auto;
+}
+
+.imgbox img{
+    width: 300px;
+}
+}
+
+
+@media (max-width: 400px) {
+
+    
+
+    #content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .imgbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .imgcontainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .headline{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    
+    .imgbox img{
+        width: 250px;
+    }
+
+    .banner {
+        display: none;
+    }
+   
+}
